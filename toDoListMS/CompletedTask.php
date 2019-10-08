@@ -9,8 +9,8 @@
         $completed = mysqli_query($connection,$query);
 
         if(!$completed){
-            echo "Error No:".mysqli_connect_errno($completed);
-            echo "Error:".mysqli_connect_error($completed);
+            echo "Error No:".mysqli_errno($completed);
+            echo "Error:".mysqli_error($completed);
             die;
         }
         else{

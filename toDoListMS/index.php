@@ -17,8 +17,8 @@
             $addTask = mysqli_query($connection,$query);
 
             if(!$addTask){
-                echo "Error No:".mysqli_connect_errno($addTask);
-                echo "Error:".mysqli_connect_error($addTask);
+                echo "Error No:".mysqli_errno($addTask);
+                echo "Error:".mysqli_error($addTask);
                 die;
             }
         }

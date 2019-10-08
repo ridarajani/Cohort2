@@ -10,8 +10,8 @@
         $tableCreation = mysqli_query($connection,$query);
 
         if(!$tableCreation){
-            echo "Error No:".mysqli_connect_errno($tableCreation);
-            echo "Error:".mysqli_connect_error($tableCreation);
+            echo "Error No:".mysqli_errno($tableCreation);
+            echo "Error:".mysqli_error($tableCreation);
             die;
         }
 ?>

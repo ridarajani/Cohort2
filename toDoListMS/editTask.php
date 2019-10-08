@@ -19,8 +19,8 @@
         $taskEdit = mysqli_query($connection,$query);
 
         if(!$taskEdit){
-            echo "Error No:".mysqli_connect_errno($taskEdit);
-            echo "Error:".mysqli_connect_error($taskEdit);
+            echo "Error No:".mysqli_errno($taskEdit);
+            echo "Error:".mysqli_error($taskEdit);
             die;
         }
         else{
